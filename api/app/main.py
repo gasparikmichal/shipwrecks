@@ -6,10 +6,10 @@ from .extensions import client
 main = Blueprint('main', __name__)
 
 
-@main.route('/')
+@main.route('/shipwrecks')
 def index():
     results = json_util.dumps(
-        client.get_database('sample_geospatial').get_collection('shipwrecks').find().limit(25)
+        client.get_database('sample_geospatial').get_collection('shipwrecks').find().limit(100)
     )
     return Response(
         results

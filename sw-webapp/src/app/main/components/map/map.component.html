@@ -1,1 +1,13 @@
-<p>map works!</p>
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [minZoom]="minZoom"
+  [maxZoom]="maxZoom"
+  [styles]="styles"
+>
+  <agm-marker *ngFor="let item of markers"
+              [latitude]="item?.latdec"
+              [longitude]="item?.latdec"
+  ></agm-marker>
+</agm-map>
