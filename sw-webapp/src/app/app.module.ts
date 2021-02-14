@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,
