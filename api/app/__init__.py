@@ -4,7 +4,7 @@ from .extensions import mongo
 from .main import main
 
 
-def create_app(config_object='flaskapp.settings'):
+def create_app(config_object='app.settings'):
 
     app = Flask(__name__)
 
