@@ -6,3 +6,17 @@ body{
 agm-map {
   height: 100vh;
 }
+
+/*
+  Temporary
+*/
+
+app-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.32);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.32);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.32);
+}

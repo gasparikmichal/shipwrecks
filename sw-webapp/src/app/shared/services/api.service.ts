@@ -14,7 +14,7 @@ export class ApiService {
   }
 
   getShipwrecks(): Observable<any> {
-    return this.httpClient.get(`${this.baseUrl}/shipwrecks`);
+    return this.httpClient.get(`${this.baseUrl}/wrecks`);
   }
 
 }

@@ -32,6 +32,8 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "object-fit-images": "^3.2.3",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.2.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

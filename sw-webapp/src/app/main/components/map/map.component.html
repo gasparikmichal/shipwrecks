@@ -7,7 +7,8 @@
   [styles]="styles"
 >
   <agm-marker *ngFor="let item of markers"
-              [latitude]="item?.latdec"
-              [longitude]="item?.latdec"
+              [latitude]="item?.coords?.latitude"
+              [longitude]="item?.coords?.longitude"
+              [iconUrl]="iconUrl"
   ></agm-marker>
 </agm-map>

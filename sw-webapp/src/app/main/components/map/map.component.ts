@@ -3,6 +3,7 @@ import { ApiService } from "../../../shared/services/api.service";
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 import { styles } from "../../../shared/constants/map/styles.consants";
+import { bermudaTriangle } from "../../../shared/constants/map/coords.constants";
 
 @Component({
   selector: 'app-map',
@@ -18,7 +19,8 @@ export class MapComponent implements OnInit {
   public zoom: number = 4;
   public minZoom: number = 3;
   public maxZoom: number = 17;
-  public iconUrl: string = '/assets/images/svg/marker.svg'
+  public iconUrl: string = 'assets/icons/icon.svg'
+  public bermudaTrianglePaths = bermudaTriangle;
 
   public markers: Array<object> = [];
   public styles = styles;
